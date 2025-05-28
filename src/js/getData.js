@@ -1,19 +1,23 @@
 import {
   upcomingProduct,
   product,
-  banner
+  banner,
+  upcomingSwiper,
 } from './htmlFragment';
 
 
 
 const createUpcomingProductCard = data => {
   const upcomingSection = document.querySelector('#slider'); 
+  const upcomingSwiperSection = document.querySelector('#swiperWrapper'); 
   let htmlFragment=""
+  let htmlSwiper=""
   for (let i = 0; i < 14; i++) {
     htmlFragment=htmlFragment.concat(" ", upcomingProduct(data[i].id, data[i].image, data[i].text))
+    htmlSwiper=htmlSwiper.concat(" ", upcomingSwiper(data[i].id, data[i].image, data[i].text))
   }
   upcomingSection.innerHTML = htmlFragment
-
+  upcomingSwiperSection.innerHTML = htmlSwiper
 };
 export const createProductCard = data => {
   const productSection = document.querySelector('#product-list');

@@ -21,7 +21,8 @@
     "@swc/helpers": "^0.5.17",
     "axios": "^1.7.2",
     "modern-normalize": "^1.1.0",
-    "regenerator-runtime": "^0.14.1"
+    "regenerator-runtime": "^0.14.1",
+    "swiper": "^11.2.8"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.6.0",

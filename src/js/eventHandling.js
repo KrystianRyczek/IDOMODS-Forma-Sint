@@ -53,8 +53,6 @@ window.addEventListener('click', event => {
           const contentData = await response.json();
 
           if(contentData.data.length!==0){
-
-            console.log(contentData.data.length)
             createProductCard(contentData.data)
             bannerInsertion()
           }
@@ -75,11 +73,11 @@ window.addEventListener('click', event => {
     bannerContent !== null? bannerContent.remove(): false 
 
     if (window.screen.width>360){
-        const item = document.querySelector('#product-5')
+        const item = document.querySelector('#product-4')
         item.insertAdjacentHTML("afterend", banner()) 
     }
     if (window.screen.width<=360){
-        const item = document.querySelector('#product-4')
+        const item = document.querySelector('#product-3')
         item.insertAdjacentHTML("afterend", banner())
     }
   })
