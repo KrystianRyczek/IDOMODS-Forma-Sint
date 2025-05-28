@@ -1,8 +1,9 @@
 import {
     banner,
     modalContent,
-    bammerModal
+    bannerModal
   } from './htmlFragment';
+
   import {
     createProductCard,
     bannerInsertion,
@@ -35,7 +36,7 @@ window.addEventListener('click', event => {
         const modalBackdrop = document.querySelector('#backdrop')
         modalBackdrop.classList.add('modal-open')
         const modalBox = document.querySelector('#modla-box')
-        modalBox.innerHTML = bammerModal()
+        modalBox.innerHTML = bannerModal()
     }    
   });
   window.addEventListener('change', event => {
@@ -52,7 +53,7 @@ window.addEventListener('click', event => {
           const contentData = await response.json();
 
           if(contentData.data.length!==0){
-            
+
             console.log(contentData.data.length)
             createProductCard(contentData.data)
             bannerInsertion()
