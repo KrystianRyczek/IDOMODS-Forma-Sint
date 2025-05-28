@@ -55,12 +55,12 @@ img{
         width: 328px;
         height: 78px;
         position: relative;
-        margin: 0 auto 36px auto;
+        margin: 0 auto 64px auto;
     }
     @media screen and (min-width: 361px) {
         width: 1836px;
         height: 88px;
-        margin: 0 auto 40px auto;
+        margin: 0 auto 80px auto;
     }
 
 }
@@ -69,7 +69,7 @@ img{
     display: flex;
     font-size: 16px;
     font-weight: 500;
-    line-height: 1,4;
+    line-height: 1.4;
     letter-spacing: -0.01;
     color: #1D1D1D;
     text-transform: uppercase;
@@ -117,7 +117,7 @@ img{
         gap: 42px;
         font-size: 16px;
         font-weight: 500;
-        line-height: 1,4;
+        line-height: 1.4;
         letter-spacing: -0.01;
         color: #1D1D1D;
         text-transform: uppercase;
@@ -164,7 +164,13 @@ img{
   fill: black;
   margin-right:12px;
 }
-
+.user-name{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.4;
+    letter-spacing: -0.01;
+    align-content: center;
+  }
 .hamburger-menu{
     @media screen and (max-width: 360px) {
         margin: 0;
@@ -195,7 +201,7 @@ img{
     @media screen and (max-width: 360px) {
         font-size: 16px;
         font-weight: 500;
-        line-height: 1,4;
+        line-height: 1.4;
         letter-spacing: -0.01;
         color: #1D1D1D;
         text-transform: uppercase;
@@ -303,7 +309,7 @@ img{
         justify-content: center;
         font-size: 16px;
         font-weight: 500;
-        line-height: 1,4;
+        line-height: 1.4;
         letter-spacing: -0.01;
         color: #1D1D1D;
         text-transform: uppercase;
@@ -318,7 +324,7 @@ img{
         gap: 24px;
         font-size: 16px;
         font-weight: 500;
-        line-height: 1,4;
+        line-height: 1.4;
         letter-spacing: -0.01;
         color: #1D1D1D;
         text-transform: uppercase;

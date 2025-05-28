@@ -1,15 +1,15 @@
-var count = 0;
-var inscriment = 0
-var margin = 0
-var slider = 0
-var itemDisplay = 0
-var screenWidth= 0
-var item = 0
-var itemleft = 0
-var itemSlide = 0
-var prevMode =true
-var mode = true
-var mobile = true
+let count = 0;
+let inscriment = 0
+let margin = 0
+let slider = 0
+let itemDisplay = 0
+let screenWidth= 0
+let item = 0
+let itemleft = 0
+let itemSlide = 0
+let prevMode =true
+let mode = true
+let mobile = true
 window.addEventListener('resize', ()=>{
     if(screen.width>360){
        mobile = false
