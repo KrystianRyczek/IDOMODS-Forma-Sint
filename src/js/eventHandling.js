@@ -3,6 +3,10 @@ import {
     modalContent,
     bammerModal
   } from './htmlFragment';
+  import {
+    createProductCard,
+    bannerInsertion,
+  } from './getData';
 
 
 window.addEventListener('click', event => {
@@ -34,6 +38,36 @@ window.addEventListener('click', event => {
         modalBox.innerHTML = bammerModal()
     }    
   });
+  window.addEventListener('change', event => {
+
+    (async function getData() {
+        const url = `https://brandstestowy.smallhost.pl/api/random?pageNumber=1&pageSize=${event.target.value}`;
+        
+        try {
+          const response = await fetch(url);
+          if (!response.ok) {
+            throw new Error(`Response status: ${response.status}`);
+          }
+    
+          const contentData = await response.json();
+
+          if(contentData.data.length!==0){
+            
+            console.log(contentData.data.length)
+            createProductCard(contentData.data)
+            bannerInsertion()
+          }
+    
+        } catch (error) {
+          console.error(error.message);
+        }
+      })()
+
+
+
+  });
+
+
 
   window.addEventListener("resize", ()=>{
     const bannerContent = document.querySelector('#banner')

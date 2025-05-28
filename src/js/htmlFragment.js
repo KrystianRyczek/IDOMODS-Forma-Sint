@@ -52,13 +52,13 @@ export const upcomingProduct = (
 
 
   export const product =(
+    i,
     id,
     imgSrc,
-    text,
   )=>{
     const itemID= ('0'+ id.toString()).slice(-2)
 
-    return` <li class="product-list-item" id="product-${id}">
+    return` <li class="product-list-item" id="product-${i}">
                 <div class="product-item-box">
                     <h3 class="product-item-h">ID: ${itemID}</h3>
                     <picture>

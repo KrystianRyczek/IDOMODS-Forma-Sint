@@ -15,27 +15,27 @@ const createUpcomingProductCard = data => {
   upcomingSection.innerHTML = htmlFragment
 
 };
-const createProductCard = data => {
+export const createProductCard = data => {
   const productSection = document.querySelector('#product-list');
   let htmlFragment=""
-  for (let i = 0; i < 14; i++) {
-    htmlFragment=htmlFragment.concat(" ", product(data[i].id, data[i].image, data[i].text))
+  for (let i = 0; i < data.length; i++) {
+    htmlFragment=htmlFragment.concat(" ", product(i, data[i].id, data[i].image))
   }
   productSection.innerHTML = htmlFragment
 };
 
-const bannerInsertion = ()=>{
+export const bannerInsertion = ()=>{
   let productItem
   window.screen.width>360
-        ? productItem = document.querySelector('#product-5')
-        :productItem = document.querySelector('#product-4')
+        ? productItem = document.querySelector('#product-4')
+        :productItem = document.querySelector('#product-3')
   productItem.insertAdjacentHTML("afterend", banner())
 }
 
 
 
 (async function getData() {
-    const url = "https://brandstestowy.smallhost.pl/api/random?pageNumber=1&pageSize=20";
+    const url = "https://brandstestowy.smallhost.pl/api/random?pageNumber=1&pageSize=14";
     
     try {
       const response = await fetch(url);
@@ -50,7 +50,6 @@ const bannerInsertion = ()=>{
         createProductCard(contentData.data)
         bannerInsertion()
       }
-
 
     } catch (error) {
       console.error(error.message);
