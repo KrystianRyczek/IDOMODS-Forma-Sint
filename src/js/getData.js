@@ -5,27 +5,31 @@ import {
   upcomingSwiper,
 } from './htmlFragment';
 
-
-
-const createUpcomingProductCard = data => {
-  const upcomingSection = document.querySelector('#slider'); 
-  const upcomingSwiperSection = document.querySelector('#swiperWrapper'); 
-  let htmlFragment=""
-  let htmlSwiper=""
+const createUpcomingSliderCard = data => {
+  const upcomingSection = document.querySelector('#slider');  
+  let sliderHtml=""
   for (let i = 0; i < 14; i++) {
-    htmlFragment=htmlFragment.concat(" ", upcomingProduct(data[i].id, data[i].image, data[i].text))
-    htmlSwiper=htmlSwiper.concat(" ", upcomingSwiper(data[i].id, data[i].image, data[i].text))
+    sliderHtml=sliderHtml.concat(" ", upcomingProduct(data[i].id, data[i].image, data[i].text))
   }
-  upcomingSection.innerHTML = htmlFragment
-  upcomingSwiperSection.innerHTML = htmlSwiper
+  upcomingSection.innerHTML = sliderHtml
 };
+
+const createUpcomingSwiperCard = data => {
+  const upcomingSwiperSection = document.querySelector('#swiperWrapper'); 
+  let swiperHtml=""
+  for (let i = 0; i < 14; i++) {
+    swiperHtml=swiperHtml.concat(" ", upcomingSwiper(data[i].id, data[i].image, data[i].text))
+  }
+  upcomingSwiperSection.innerHTML = swiperHtml
+};
+
 export const createProductCard = data => {
   const productSection = document.querySelector('#product-list');
-  let htmlFragment=""
+  let productCardHtml=""
   for (let i = 0; i < data.length; i++) {
-    htmlFragment=htmlFragment.concat(" ", product(i, data[i].id, data[i].image))
+    productCardHtml=productCardHtml.concat(" ", product(i, data[i].id, data[i].image))
   }
-  productSection.innerHTML = htmlFragment
+  productSection.innerHTML = productCardHtml
 };
 
 export const bannerInsertion = ()=>{
@@ -35,8 +39,6 @@ export const bannerInsertion = ()=>{
         :productItem = document.querySelector('#product-3')
   productItem.insertAdjacentHTML("afterend", banner())
 }
-
-
 
 (async function getData() {
     const url = "https://brandstestowy.smallhost.pl/api/random?pageNumber=1&pageSize=14";
@@ -50,7 +52,8 @@ export const bannerInsertion = ()=>{
       const contentData = await response.json();
 
       if(contentData.data.length!==0){
-        createUpcomingProductCard(contentData.data)
+        //createUpcomingSliderCard(contentData.data)
+        createUpcomingSwiperCard(contentData.data)
         createProductCard(contentData.data)
         bannerInsertion()
       }
