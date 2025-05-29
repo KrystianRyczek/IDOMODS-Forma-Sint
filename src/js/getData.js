@@ -15,12 +15,12 @@ const createUpcomingSliderCard = data => {
 };
 
 const createUpcomingSwiperCard = data => {
-  const upcomingSwiperSection = document.querySelector('#swiperWrapper'); 
-  let swiperHtml=""
   for (let i = 0; i < 14; i++) {
-    swiperHtml=swiperHtml.concat(" ", upcomingSwiper(data[i].id, data[i].image, data[i].text))
+    let swiperHtml=""
+    const upcomingSwiperSection = document.querySelector(`#upcoming-${i}`); 
+    swiperHtml=upcomingSwiper(data[i].id, data[i].image, data[i].text)
+    upcomingSwiperSection.innerHTML = swiperHtml
   }
-  upcomingSwiperSection.innerHTML = swiperHtml
 };
 
 export const createProductCard = data => {

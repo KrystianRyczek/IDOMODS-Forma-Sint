@@ -1,10 +1,12 @@
 .product-box{
-    margin:0 auto 0 auto;
+    
     @media screen and (max-width: 360px) {
         width: 328px;
+        margin: 24px auto 0 auto;
     }
     @media screen and (min-width: 361px) {
         width: 1836px;
+        margin: 42px auto 0 auto;
     }
 }
 .select-box{
@@ -12,7 +14,6 @@
     gap: 10px;
     justify-content: center;
     align-items: center;
-
 
     @media screen and (max-width: 360px) {
         flex-direction: column;
@@ -32,18 +33,7 @@
     color: #1D1D1D;
     text-transform: uppercase;
 }
-.select-list{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 24px;
-    @media screen and (max-width: 360px) {
 
-    }
-    @media screen and (min-width: 361px) {
-        
-    }
-}
 .banner{
 
     display: flex;

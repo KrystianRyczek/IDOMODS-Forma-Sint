@@ -50,9 +50,7 @@ export const upcomingProduct = (
         paragraf=''
         className = ''
     }
-    return `    <div class="swiper-slide" id="upcoming-${id}">
-
-                    <div class="upcoming-product-box">
+    return `        <div class="upcoming-product-box">
                         <div class="upcoming-product-atr" >
                                 <div class="${className}">
                                     <p class="upcoming-product-label">${paragraf}</p>
@@ -69,8 +67,7 @@ export const upcomingProduct = (
                     <div class="upcoming-product-description-box">
                         <h1 class="upcoming-product-description">${text}</h1>
                         <p class="upcoming-product-price">€300,00 EUR</p>
-                    </div>
-                </div>`
+                    </div>`
   };
   export const banner = () =>{
     return` <li class="banner" id="banner">
@@ -99,7 +96,7 @@ export const upcomingProduct = (
                 <div class="product-item-box">
                     <h3 class="product-item-h">ID: ${itemID}</h3>
                     <picture>
-                        <img class="product-item-image" src="${imgSrc}" alt="product photo" data-action="openModla" data-src="${imgSrc}" data-id="${id} loading="lazy"">
+                        <img class="product-item-image" src="${imgSrc}" alt="product photo" data-action="openModla" data-src="${imgSrc}" data-id="${id}" loading="lazy">
                     </picture>
                 </div>
             </li>`
@@ -109,8 +106,10 @@ export const upcomingProduct = (
     id,
     imgSrc
   )=>{
+
+    const modalID= ('0'+ id.toString()).slice(-2)
     return`
-                <h3 class="modal-id">ID:${id}</h3>
+                <h3 class="modal-id">ID:${modalID}</h3>
                 <picture>
                     <img class="modla-image" src="${imgSrc}" loading="lazy">
                 </picture>
