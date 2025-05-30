@@ -2,11 +2,11 @@
     
     @media screen and (max-width: 360px) {
         width: 328px;
-        margin: 24px auto 0 auto;
+        margin: 0 auto;
     }
     @media screen and (min-width: 361px) {
         width: 1836px;
-        margin: 42px auto 0 auto;
+        margin: 0 auto;
     }
 }
 .select-box{
@@ -17,12 +17,10 @@
 
     @media screen and (max-width: 360px) {
         flex-direction: column;
-        height: 62px;
-        margin-bottom: 32px;
+        padding: 24px 0 32px 0;
     }
     @media screen and (min-width: 361px) {
-        height: 24px;
-        margin-bottom: 64px;
+        padding: 42px 0 64px 0;
     }
 }
 .select-box-h{

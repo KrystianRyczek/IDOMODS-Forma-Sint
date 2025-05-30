@@ -76,6 +76,7 @@ export const upcomingProduct = (
 
 `
   };
+  
   export const banner = () =>{
     return` <li class="banner" id="banner">
                 <div class="banner-box" id="banner-box">

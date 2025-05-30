@@ -1,12 +1,11 @@
+import {Swiper} from '../../node_modules/swiper/swiper-bundle.min.mjs'
 import {
-  upcomingProduct,
-  product,
-  banner,
-  upcomingSwiper,
-} from './htmlFragment';
-
-import Swiper from '../../node_modules/swiper/swiper-bundle.min.mjs'
-
+  createUpcomingSliderCard,
+  createUpcomingSwiperCard,
+  createProductCard,
+  bannerInsertion,
+  
+} from './helpers';
 const swiper = new Swiper(".swiper", {
 slidesPerView: 1.1,
 spaceBetween: 24,
@@ -16,58 +15,12 @@ nextEl: ".swiper-next-btn",
 prevEl: ".swiper-prev-btn",
 },
 breakpoints: {
-
     361: {
       slidesPerView: 4,
       spaceBetween: 24
     },
 }
 });  
-
-const createUpcomingSliderCard = data => {
-  const upcomingSection = document.querySelector('#slider');  
-  let sliderHtml=""
-  for (let i = 0; i < 14; i++) {
-    sliderHtml=sliderHtml.concat(" ", upcomingProduct(data[i].id, data[i].image, data[i].text))
-  }
-  upcomingSection.innerHTML = sliderHtml
-};
-
-const createUpcomingSwiperCard = data => {
-  const upcomingSection = document.querySelector('#swiperWrapper');  
-  let swiperHtml=""
-  for (let i = 0; i < 14; i++) {
-    swiperHtml=swiperHtml.concat(" ", upcomingSwiper(data[i].id, data[i].image, data[i].text))
-  }
-  upcomingSection.innerHTML = swiperHtml
-};
-
-
-
-  // for (let i = 0; i < 14; i++) {
-  //   let swiperHtml=""
-  //   const upcomingSwiperSection = document.querySelector(`#upcoming-${i}`); 
-  //   swiperHtml=upcomingSwiper(data[i].id, data[i].image, data[i].text)
-  //   upcomingSwiperSection.innerHTML = swiperHtml
-  // }
-
-
-export const createProductCard = data => {
-  const productSection = document.querySelector('#product-list');
-  let productCardHtml=""
-  for (let i = 0; i < data.length; i++) {
-    productCardHtml=productCardHtml.concat(" ", product(i, data[i].id, data[i].image))
-  }
-  productSection.innerHTML = productCardHtml
-};
-
-export const bannerInsertion = ()=>{
-  let productItem
-  window.screen.width>360
-        ? productItem = document.querySelector('#product-4')
-        :productItem = document.querySelector('#product-3')
-  productItem.insertAdjacentHTML("afterend", banner())
-}
 
 (async function getData() {
     const url = "https://brandstestowy.smallhost.pl/api/random?pageNumber=1&pageSize=14";

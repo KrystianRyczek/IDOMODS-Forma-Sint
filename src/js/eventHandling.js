@@ -7,7 +7,7 @@ import {
   import {
     createProductCard,
     bannerInsertion,
-  } from './getData';
+  } from './helpers';
 
 
 window.addEventListener('click', event => {
@@ -39,6 +39,7 @@ window.addEventListener('click', event => {
         modalBox.innerHTML = bannerModal()
     }    
   });
+  
   window.addEventListener('change', event => {
 
     (async function getData() {
@@ -61,12 +62,7 @@ window.addEventListener('click', event => {
           console.error(error.message);
         }
       })()
-
-
-
   });
-
-
 
   window.addEventListener("resize", ()=>{
     const bannerContent = document.querySelector('#banner')
