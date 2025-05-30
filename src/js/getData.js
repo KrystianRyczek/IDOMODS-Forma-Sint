@@ -5,6 +5,25 @@ import {
   upcomingSwiper,
 } from './htmlFragment';
 
+import Swiper from '../../node_modules/swiper/swiper-bundle.min.mjs'
+
+const swiper = new Swiper(".swiper", {
+slidesPerView: 1.1,
+spaceBetween: 24,
+loop: true,
+navigation: {
+nextEl: ".swiper-next-btn",
+prevEl: ".swiper-prev-btn",
+},
+breakpoints: {
+
+    361: {
+      slidesPerView: 4,
+      spaceBetween: 24
+    },
+}
+});  
+
 const createUpcomingSliderCard = data => {
   const upcomingSection = document.querySelector('#slider');  
   let sliderHtml=""
@@ -15,13 +34,23 @@ const createUpcomingSliderCard = data => {
 };
 
 const createUpcomingSwiperCard = data => {
+  const upcomingSection = document.querySelector('#swiperWrapper');  
+  let swiperHtml=""
   for (let i = 0; i < 14; i++) {
-    let swiperHtml=""
-    const upcomingSwiperSection = document.querySelector(`#upcoming-${i}`); 
-    swiperHtml=upcomingSwiper(data[i].id, data[i].image, data[i].text)
-    upcomingSwiperSection.innerHTML = swiperHtml
+    swiperHtml=swiperHtml.concat(" ", upcomingSwiper(data[i].id, data[i].image, data[i].text))
   }
+  upcomingSection.innerHTML = swiperHtml
 };
+
+
+
+  // for (let i = 0; i < 14; i++) {
+  //   let swiperHtml=""
+  //   const upcomingSwiperSection = document.querySelector(`#upcoming-${i}`); 
+  //   swiperHtml=upcomingSwiper(data[i].id, data[i].image, data[i].text)
+  //   upcomingSwiperSection.innerHTML = swiperHtml
+  // }
+
 
 export const createProductCard = data => {
   const productSection = document.querySelector('#product-list');
@@ -56,6 +85,7 @@ export const bannerInsertion = ()=>{
         createUpcomingSwiperCard(contentData.data)
         createProductCard(contentData.data)
         bannerInsertion()
+        swiper.update()
       }
 
     } catch (error) {
