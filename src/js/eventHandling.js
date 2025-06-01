@@ -4,12 +4,6 @@ import {
     bannerModal
   } from './htmlFragment';
 
-  import {
-    createProductCard,
-    bannerInsertion,
-  } from './helpers';
-
-
 window.addEventListener('click', event => {
     const action = event.target.dataset.action
     if( action === "openModla"){
@@ -40,30 +34,6 @@ window.addEventListener('click', event => {
     }    
   });
   
-  window.addEventListener('change', event => {
-
-    (async function getData() {
-        const url = `https://brandstestowy.smallhost.pl/api/random?pageNumber=1&pageSize=${event.target.value}`;
-        
-        try {
-          const response = await fetch(url);
-          if (!response.ok) {
-            throw new Error(`Response status: ${response.status}`);
-          }
-    
-          const contentData = await response.json();
-
-          if(contentData.data.length!==0){
-            createProductCard(contentData.data)
-            bannerInsertion()
-          }
-    
-        } catch (error) {
-          console.error(error.message);
-        }
-      })()
-  });
-
   window.addEventListener("resize", ()=>{
     const bannerContent = document.querySelector('#banner')
     bannerContent !== null? bannerContent.remove(): false 

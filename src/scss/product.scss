@@ -112,16 +112,11 @@
     width: 262px;
     height: 48px;
     display: flex;
+    gap:8px;
     border-radius: 6px;
-    padding: 12px 48px 12px 48px;
+    padding: 12px 47px 12px 47px;
     border: none;
     text-align: center;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.4;
-    letter-spacing: -0.01;
-    color: #1D1D1D;
-    text-transform: uppercase;
     @media screen and (max-width: 360px) {
         background-color: #FFFFFF;
     }
@@ -129,11 +124,25 @@
         background-color: #EAEAE8;
     }
 }
+.banner-p{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.4;
+    letter-spacing: -0.01;
+    color: #1D1D1D;
+    text-transform: uppercase;
+}
 .banner-icon{
     width: 24px;
     height: 24px;
     fill: black;
 }
+.cone-path{
+    scale:0.5;
+    fill: black;
+}
+
+
 .product-list{
     display: flex;
     flex-wrap: wrap;
