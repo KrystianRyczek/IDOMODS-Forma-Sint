@@ -4,25 +4,26 @@
     margin: 0 auto 0 auto;
 
     @media screen and (max-width: 360px) {
+        height: 740px;
         width: 328px;
+        gap: 24px;
+        padding-top: 136px;
     }
     @media screen and (min-width: 361px) {
+        height: 1080px;
         width: 1836px;
-
+        gap: 42px;
+        padding-top: 168px;
     }
 }
 .name-svg{
-
     @media screen and (max-width: 360px) {
         width: 328px;
         height: 49px;
-        margin-bottom: 24px;
     }
     @media screen and (min-width: 361px) {
-
         width: 918px;
         height: 138px;
-        margin-bottom: 42px;
     }
 }
 .hero-image{

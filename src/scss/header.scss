@@ -27,7 +27,6 @@ img{
 
 .container {
     position: relative;
-    min-height: 50px;
     margin: 0 auto 0 auto;
     @media screen and (max-width: 360px) {
         width: 360px;
@@ -45,22 +44,22 @@ img{
   }
 
 .header{
-    
-   
+    width: 100%;
     display: flex;
     justify-content: space-between;
-
-    padding: 32px 0 32px 0;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #FFFFFF;
     @media screen and (max-width: 360px) {
-        width: 328px;
-        height: 78px;
-        position: relative;
-        margin: 0 auto 64px auto;
+        height: 72px;
+        padding: 32px 16px;
     }
     @media screen and (min-width: 361px) {
-        width: 1836px;
         height: 88px;
-        margin: 0 auto 80px auto;
+        padding: 32px 42px;
+
     }
 
 }

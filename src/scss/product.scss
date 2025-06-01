@@ -3,10 +3,12 @@
     @media screen and (max-width: 360px) {
         width: 328px;
         margin: 0 auto;
+        padding: 24px 0 64px 0;
     }
     @media screen and (min-width: 361px) {
         width: 1836px;
         margin: 0 auto;
+        padding: 42px 0;
     }
 }
 .select-box{
@@ -17,13 +19,14 @@
 
     @media screen and (max-width: 360px) {
         flex-direction: column;
-        padding: 24px 0 32px 0;
+        padding-bottom: 32px;
     }
     @media screen and (min-width: 361px) {
-        padding: 42px 0 64px 0;
+        padding-bottom: 64px;
     }
 }
 .select-box-h{
+    min-height: 22px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.4;
@@ -31,7 +34,20 @@
     color: #1D1D1D;
     text-transform: uppercase;
 }
-
+.sellect{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.4;
+    letter-spacing: -0.01;
+    color: #1D1D1D;
+    text-transform: uppercase;
+    @media screen and (max-width: 360px) {
+        height: 24px;
+    }
+    @media screen and (min-width: 361px) {
+        padding-bottom: 64px;
+    }
+}
 .banner{
 
     display: flex;
@@ -120,12 +136,10 @@
     @media screen and (max-width: 360px) {
         width: 328px;
         gap: 12px;
-        margin-bottom: 64px;
     }
     @media screen and (min-width: 361px) {
         width: 1836px;
         gap: 24px;
-        margin-bottom: 42px;
     }
 }
 .product-list-item{

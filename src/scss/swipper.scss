@@ -1,18 +1,34 @@
 .swiper-box{
-  display: flex;
-  flex-direction: column;
-
   @media screen and (max-width: 360px) {
       width: 328px;
-      height: 64px;
+      height: 577px;
       row-gap: 4px;
-      margin: 36px auto 0 auto;
+      margin: 0 auto;
+      padding: 36px 0 65px 0;
   }
   @media screen and (min-width: 361px) {
       width: 1836px;
+      height: 900px;
+      row-gap: 10px;
+      margin: 0 auto;
+      padding: 96px 0;
+  }
+}
+
+.swiper-banner{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  
+  @media screen and (max-width: 360px) {
+      height: 64px;
+      row-gap: 4px;
+      margin: 0 auto 32px auto;
+  }
+  @media screen and (min-width: 361px) {
       height: 78px;
       row-gap: 10px;
-      margin: 96px auto 0 auto;
+      margin: 0 auto 32px auto;
   }
 }
 .upcoming-swiper-p{
@@ -38,15 +54,12 @@
 
 .swiper{
     position: relative;
+    width: 100%;
     @media screen and (max-width: 360px) {
-      width: 328px;
       height: 412px;
-      margin: 32px auto;
     }
     @media screen and (min-width: 361px) {
-      width: 1836px;
-      height: 587px;
-      margin: 42px auto 96px auto;
+      height: 588px;
     }   
 }
 
