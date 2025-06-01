@@ -85,7 +85,10 @@ export const upcomingProduct = (
                         <h2 class="banner-slogan">You'll look and feel like the champion.</h2>
                     </div>
                     <button type="button" class="banner-button" data-action="openBanner">
-                        <p data-action="openBanner">Check this out></p>
+                        <p data-action="openBanner">Check this out</p>
+                        <svg class="banner-icon">
+                            <use href="./icons/icons.svg#icon-cone-r"></use>
+                        </svg>
                     </button>
                 </div>
             </li> 

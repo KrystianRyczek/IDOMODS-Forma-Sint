@@ -8,7 +8,7 @@ import {
 } from './helpers';
 const swiper = new Swiper(".swiper", {
 slidesPerView: 1.1,
-spaceBetween: 24,
+spaceBetween: 16,
 loop: true,
 navigation: {
 nextEl: ".swiper-next-btn",

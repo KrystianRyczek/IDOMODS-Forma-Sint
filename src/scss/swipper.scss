@@ -107,12 +107,12 @@ div.swiper::after{
     background-color: #FFFFFF;
   
     @media screen and (max-width: 360px) {
-      right: 10px;
-      height: 52px;
-      width: 52px;
+      right: 16px;
+      height: 64px;
+      width: 64px;
     }
     @media screen and (min-width: 361px) {
-      right: 52px;
+      right: 74px;
       height: 72px;
       width: 72px;
     }
@@ -129,14 +129,25 @@ div.swiper::after{
     background-color: #FFFFFF;
   
     @media screen and (max-width: 360px) {
-      left: 10px;
-      height: 52px;
-      width: 52px;
+      left: 16px;
+      height: 64px;
+      width: 64px;
     }
     @media screen and (min-width: 361px) {
-      left: 52px;
+      left: 74px;
       height: 72px;
       width: 72px;
     }
   
+}
+.swiper-icon{
+  @media screen and (max-width: 360px) {
+    width: 13.3px;
+    height: 13.3px;
+  }
+  @media screen and (min-width: 361px) {
+    width: 15px;
+    height: 15px;
+  }
+
 }
