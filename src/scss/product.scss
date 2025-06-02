@@ -96,7 +96,6 @@
 .banner-slogan{
     text-align: center;
     font-weight: 700;
-
     line-height: 1.2;
     letter-spacing: -0.02;
     color: #1D1D1D;
@@ -138,7 +137,7 @@
     fill: black;
 }
 .cone-path{
-    scale:0.5;
+    transform: scale(0.5);
     fill: black;
 }
 
