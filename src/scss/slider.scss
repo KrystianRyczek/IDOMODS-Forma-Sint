@@ -149,14 +149,7 @@ div.slider-width::after{
 .hart-path{
     background-clip: content-box;
     fill: transparent;     
-    @media screen and (max-width: 360px) {
-        scale:0.5;
-      
-    }
-    @media screen and (min-width: 361px) {
-        scale:0.5;
-   
-    }
+    transform: scale(0.5);
 }
 .hart-path:hover{
     fill: #1D1D1D; 
