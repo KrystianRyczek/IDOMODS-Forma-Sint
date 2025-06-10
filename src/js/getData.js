@@ -15,7 +15,7 @@ nextEl: ".swiper-next-btn",
 prevEl: ".swiper-prev-btn",
 },
 breakpoints: {
-    361: {
+    1101: {
       slidesPerView: 4,
       spaceBetween: 24
     },
