@@ -1,3 +1,7 @@
+:root {
+  --mobile: 1100px;
+  --desktop: 1101px;
+}
 .swiper-box{
   @media screen and (max-width: var(--mobile)) {
       width: 328px;

@@ -1,3 +1,7 @@
+:root {
+    --mobile: 1100px;
+    --desktop: 1101px;
+  }
 .upcoming-prod-box{
     margin: 0 auto;
     @media screen and (max-width: var(--mobile)) {
