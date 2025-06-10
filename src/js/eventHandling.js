@@ -38,11 +38,11 @@ window.addEventListener('click', event => {
     const bannerContent = document.querySelector('#banner')
     bannerContent !== null? bannerContent.remove(): false 
 
-    if (window.screen.width>360){
+    if (window.screen.width>1101){
         const item = document.querySelector('#product-4')
         item.insertAdjacentHTML("afterend", banner()) 
     }
-    if (window.screen.width<=360){
+    if (window.screen.width<=1100){
         const item = document.querySelector('#product-3')
         item.insertAdjacentHTML("afterend", banner())
     }

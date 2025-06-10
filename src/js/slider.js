@@ -11,10 +11,10 @@ let prevMode =true
 let mode = true
 let mobile = true
 window.addEventListener('resize', ()=>{
-    if(screen.width>360){
+    if(screen.width>1101){
        mobile = false
     }
-    if(screen.width<361){
+    if(screen.width<1100){
        mobile = true
     }
     prevMode=mode
@@ -29,11 +29,11 @@ window.addEventListener('resize', ()=>{
   })
 
 window.addEventListener('click', (event) => {
-    if(screen.width>360){
+    if(screen.width>1101){
         screenWidth = 1860
         itemDisplay = 4
     }
-    if(screen.width<361){
+    if(screen.width<1100){
         screenWidth = 316
         itemDisplay = 1
     }

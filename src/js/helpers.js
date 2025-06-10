@@ -34,7 +34,7 @@ export const createProductCard = data => {
 
 export const bannerInsertion = ()=>{
   let productItem
-  window.screen.width>360
+  window.screen.width>1100
         ? productItem = document.querySelector('#product-4')
         :productItem = document.querySelector('#product-3')
   productItem.insertAdjacentHTML("afterend", banner())
