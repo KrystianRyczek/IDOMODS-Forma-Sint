@@ -8,13 +8,13 @@
     flex-direction: column;
     margin: 0 auto 0 auto;
 
-    @media screen and (max-width: var(--mobile)) {
+    @media screen and (max-width: --mobile) {
         height: 740px;
         width: 328px;
         gap: 24px;
         padding-top: 136px;
     }
-    @media screen and (min-width: var(--desktop)) {
+    @media screen and (min-width: --desktop) {
         height: 1080px;
         width: 1836px;
         gap: 42px;
@@ -22,23 +22,23 @@
     }
 }
 .name-svg{
-    @media screen and (max-width: var(--mobile)) {
+    @media screen and (max-width: --mobile) {
         width: 328px;
         height: 49px;
     }
-    @media screen and (min-width: var(--desktop)) {
+    @media screen and (min-width: --desktop) {
         width: 918px;
         height: 138px;
     }
 }
 .hero-image{
 
-    @media screen and (max-width: var(--mobile)) {
+    @media screen and (max-width: --mobile) {
         width: 328px;
         height: 530px;
         border-radius: 8px;
     }
-    @media screen and (min-width: var(--desktop)) {
+    @media screen and (min-width: --desktop) {
         width: 1836px;
         height: 732px;
         border-radius: 8px;
