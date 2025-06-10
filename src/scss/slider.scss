@@ -1,12 +1,12 @@
 .upcoming-prod-box{
     margin: 0 auto;
-    @media screen and (max-width: 360px) {
+    @media screen and (max-width: var(--mobile)) {
         height: 577px;
         width: 328px;
         padding-top: 36px;
         padding-bottom: 32px;
     }
-    @media screen and (min-width: 361px) {
+    @media screen and (min-width: var(--desktop)) {
         height: 900px;
         width: 1836px;
         padding-top: 96px;
@@ -18,12 +18,12 @@
     display: flex;
     flex-direction: column;
 
-    @media screen and (max-width: 360px) {
+    @media screen and (max-width: var(--mobile)) {
         height: 64px;
         row-gap: 4px;
         margin-bottom: 32px;
     }
-    @media screen and (min-width: 361px) {
+    @media screen and (min-width: var(--desktop)) {
         height: 78px;
         row-gap: 10px;
         margin-bottom: 42px;
@@ -34,10 +34,10 @@
     line-height: 1.2;
     letter-spacing: -0.02;
     color: #1D1D1D;
-    @media screen and (max-width: 360px) {
+    @media screen and (max-width: var(--mobile)) {
         font-size: 32px; 
     }
-    @media screen and (min-width: 361px) {
+    @media screen and (min-width: var(--desktop)) {
         font-size: 42px; 
     }
 }
@@ -53,11 +53,11 @@
 .slider-container{
     position: relative;
     overflow-x: hidden;
-    @media screen and (max-width: 360px) {
+    @media screen and (max-width: var(--mobile)) {
         width: 328px;
         height: 412px;
     }
-    @media screen and (min-width: 361px) {
+    @media screen and (min-width: var(--desktop)) {
         width: 1836px;
         height: 590px;
     }
@@ -69,10 +69,10 @@ div.slider-width::after{
     height: 1px;
     display: block;
     background: #EAEAE8;
-    @media screen and (max-width: 360px) {
+    @media screen and (max-width: var(--mobile)) {
         bottom: -32px;
     }
-    @media screen and (min-width: 361px) {
+    @media screen and (min-width: var(--desktop)) {
         bottom: -64px;
     }    
   }
@@ -84,10 +84,10 @@ div.slider-width::after{
     left: 0;
     top:0;
     transition: 0.4s ease-in-out;
-    @media screen and (max-width: 360px) {
+    @media screen and (max-width: var(--mobile)) {
         gap: 16px;
     }
-    @media screen and (min-width: 361px) {
+    @media screen and (min-width: var(--desktop)) {
         gap: 24px;
     }
 
@@ -98,10 +98,10 @@ div.slider-width::after{
     align-items: center;
     justify-content: center;
     height: 100%;
-    @media screen and (max-width: 360px) {
+    @media screen and (max-width: var(--mobile)) {
         width: 300px;
     }
-    @media screen and (min-width: 361px) {
+    @media screen and (min-width: var(--desktop)) {
         width: 441px;
     }
 
@@ -114,11 +114,11 @@ div.slider-width::after{
     border-radius: 6px;
     align-items: center;
     justify-content: center;
-    @media screen and (max-width: 360px) {
+    @media screen and (max-width: var(--mobile)) {
         width: 300px;
         height: 300px;
     }
-    @media screen and (min-width: 361px) {
+    @media screen and (min-width: var(--desktop)) {
         width: 441px;
         height: 441px;
     }
@@ -137,11 +137,11 @@ div.slider-width::after{
 .hart-svg{
     background-clip: content-box;
     fill: transparent;     
-    @media screen and (max-width: 360px) {
+    @media screen and (max-width: var(--mobile)) {
         width: 19px;
         height: 17px;       
     }
-    @media screen and (min-width: 361px) {
+    @media screen and (min-width: var(--desktop)) {
         width: 19px;
         height: 17px;   
     }
@@ -180,11 +180,11 @@ div.slider-width::after{
 }
 .upcoming-product-image{
 
-    @media screen and (max-width: 360px) {
+    @media screen and (max-width: var(--mobile)) {
         width: 268px;
         height: 268px;
     }
-    @media screen and (min-width: 361px) {
+    @media screen and (min-width: var(--desktop)) {
         width: 380px;
         height: 380px;
 
@@ -195,10 +195,10 @@ div.slider-width::after{
     display: flex;
     flex-direction: column;
     row-gap: 12px;
-    @media screen and (max-width: 360px) {
+    @media screen and (max-width: var(--mobile)) {
         width: 300px;
     }
-    @media screen and (min-width: 361px) {
+    @media screen and (min-width: var(--desktop)) {
         width: 441px;
     }
 }
@@ -207,10 +207,10 @@ div.slider-width::after{
     line-height: 1.2;
     color: #1D1D1D;
     text-align: left;
-    @media screen and (max-width: 360px) {
+    @media screen and (max-width: var(--mobile)) {
         font-size: 18px;
     }
-    @media screen and (min-width: 361px) {
+    @media screen and (min-width: var(--desktop)) {
         font-size: 22px;
     }
 }
@@ -233,10 +233,10 @@ div.item::after{
     transition: transform 0.5s;
     transform: scaleY(0);
     transform-origin: bottom;
-    @media screen and (max-width: 360px) {
+    @media screen and (max-width: var(--mobile)) {
         bottom: -32px;
     }
-    @media screen and (min-width: 361px) {
+    @media screen and (min-width: var(--desktop)) {
         bottom: -64px;
     }    
   }
@@ -258,12 +258,12 @@ div.item:hover::after{
     border: solid 1px #EAEAE8;
     background-color: #FFFFFF;
   
-    @media screen and (max-width: 360px) {
+    @media screen and (max-width: var(--mobile)) {
       right: 10px;
       height: 52px;
       width: 52px;
     }
-    @media screen and (min-width: 361px) {
+    @media screen and (min-width: var(--desktop)) {
       right: 52px;
       height: 72px;
       width: 72px;
@@ -279,12 +279,12 @@ div.item:hover::after{
     border: solid 1px #EAEAE8;
     background-color: #FFFFFF;
   
-    @media screen and (max-width: 360px) {
+    @media screen and (max-width: var(--mobile)) {
       left: 10px;
       height: 52px;
       width: 52px;
     }
-    @media screen and (min-width: 361px) {
+    @media screen and (min-width: var(--desktop)) {
       left: 52px;
       height: 72px;
       width: 72px;
