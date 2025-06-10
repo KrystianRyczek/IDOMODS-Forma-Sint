@@ -1,15 +1,11 @@
-:root {
-    --mobile: 1100px;
-    --desktop: 1101px;
-  }
 .product-box{
     
-    @media screen and (max-width: --mobile) {
+    @media screen and (max-width: 1100px) {
         width: 328px;
         margin: 0 auto;
         padding: 24px 0 64px 0;
     }
-    @media screen and (min-width: --desktop) {
+    @media screen and (min-width: 1101px) {
         width: 1836px;
         margin: 0 auto;
         padding: 42px 0;
@@ -21,11 +17,11 @@
     justify-content: center;
     align-items: center;
 
-    @media screen and (max-width: --mobile) {
+    @media screen and (max-width: 1100px) {
         flex-direction: column;
         padding-bottom: 32px;
     }
-    @media screen and (min-width: --desktop) {
+    @media screen and (min-width: 1101px) {
         padding-bottom: 64px;
     }
 }
@@ -45,10 +41,10 @@
     letter-spacing: -0.01;
     color: #1D1D1D;
     text-transform: uppercase;
-    @media screen and (max-width: --mobile) {
+    @media screen and (max-width: 1100px) {
         height: 24px;
     }
-    @media screen and (min-width: --desktop) {
+    @media screen and (min-width: 1101px) {
         padding-bottom: 64px;
     }
 }
@@ -62,11 +58,11 @@
     background-position-x: center;
     background-position-y: center;
     border-radius: 6px;
-    @media screen and (max-width: --mobile) {
+    @media screen and (max-width: 1100px) {
         width: 328px;
         height: 498px;
     }
-    @media screen and (min-width: --desktop) {
+    @media screen and (min-width: 1101px) {
         width: 906px;
         height: 441px;
     }
@@ -79,11 +75,11 @@
     justify-content: space-between;
     align-items: center;
     margin: auto;
-    @media screen and (max-width: --mobile) {
+    @media screen and (max-width: 1100px) {
         width: 328px;
         height: 434px;
     }
-    @media screen and (min-width: --desktop) {
+    @media screen and (min-width: 1101px) {
         width: 714px;
         height: 377px;
     }
@@ -104,10 +100,10 @@
     letter-spacing: -0.02;
     color: #1D1D1D;
     text-transform: uppercase;
-    @media screen and (max-width: --mobile) {
+    @media screen and (max-width: 1100px) {
         font-size: 32px;
     }
-    @media screen and (min-width: --desktop) {
+    @media screen and (min-width: 1101px) {
         font-size: 42px;
     }
 }
@@ -120,10 +116,10 @@
     padding: 12px 47px 12px 47px;
     border: none;
     text-align: center;
-    @media screen and (max-width: --mobile) {
+    @media screen and (max-width: 1100px) {
         background-color: #FFFFFF;
     }
-    @media screen and (min-width: --desktop) {
+    @media screen and (min-width: 1101px) {
         background-color: #EAEAE8;
     }
 }
@@ -151,11 +147,11 @@
     flex-wrap: wrap;
     margin-left: auto;
     margin-right: auto;
-    @media screen and (max-width: --mobile) {
+    @media screen and (max-width: 1100px) {
         width: 328px;
         gap: 12px;
     }
-    @media screen and (min-width: --desktop) {
+    @media screen and (min-width: 1101px) {
         width: 1836px;
         gap: 24px;
     }
@@ -164,11 +160,11 @@
     display: flex;
     background-color: #EAEAE8;
     border-radius: 6px;
-    @media screen and (max-width: --mobile) {
+    @media screen and (max-width: 1100px) {
         width: 158px;
         height: 158px;
     }
-    @media screen and (min-width: --desktop) {
+    @media screen and (min-width: 1101px) {
         width: 441px;
         height: 441px;
     }
@@ -177,11 +173,11 @@
 
     margin: auto;
     position: relative;
-    @media screen and (max-width: --mobile) {
+    @media screen and (max-width: 1100px) {
         width: 142px;
         height: 142px;
     }
-    @media screen and (min-width: --desktop) {
+    @media screen and (min-width: 1101px) {
         width: 377px;
         height: 377px;  
     }
@@ -190,7 +186,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    @media screen and (max-width: --mobile) {
+    @media screen and (max-width: 1100px) {
         text-align: center;
         font-weight: 500;
         font-size: 8px;
@@ -199,7 +195,7 @@
         color: #1D1D1D;
         text-transform: uppercase;
     }
-    @media screen and (min-width: --desktop) {
+    @media screen and (min-width: 1101px) {
         text-align: center;
         font-weight: 500;
         font-size: 16px;
@@ -211,11 +207,11 @@
 }
 
 .product-item-image{
-    @media screen and (max-width: --mobile) {
+    @media screen and (max-width: 1100px) {
         width: 142px;
         height: 142px;
     }
-    @media screen and (min-width: --desktop) {
+    @media screen and (min-width: 1101px) {
         width: 377px;
         height: 377px; 
     }
@@ -230,10 +226,10 @@ select{
 
 
 
-@media screen and (max-width: --mobile) {
+@media screen and (max-width: 1100px) {
 
 }
-@media screen and (min-width: --desktop) {
+@media screen and (min-width: 1101px) {
     
 }
 
