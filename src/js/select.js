@@ -41,6 +41,7 @@ window.addEventListener('click', event => {
                 labelElement.classList.value.includes("select-icon-off")
                     ?labelElement.classList.remove('select-icon-off')
                     :false
+                    
             }else{
                 labelElement.classList.value.includes("select-icon-off")
                 ?false
